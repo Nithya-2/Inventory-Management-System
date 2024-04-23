@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0">
+	<title>Inventory Management System</title>
+	<link rel="stylesheet" href="style.css">
+	<a href=""></a>
+</head>
+
+<body>
+	<header>
+		<h2 class="title">Inventory Management System</h2>
+	</header>
+	<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+
+<div class="main-container">
+	<!-- container div -->
+	<div class="container">
+
+		
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="add">Add details</button>
+			<button class="search">Search details</button>
+		</div>
+
+		
+		<div class="form-section">
+			<div class="add-box">
+				<input id="name" type="name" class="name ele" placeholder="Name">
+                <input id="price" type="number" class="name ele" placeholder="Price">
+                <input id="expiry-date" type="text" class="name ele" placeholder="Expiry Date" onfocus="(this.type='date')"
+				onblur="(this.type='text')">
+                <input id="quantity" class="name ele" placeholder="Quantity">
+                <input id="category" class="name ele" placeholder="Category">
+                <input id="reference" class="name ele" placeholder="Reference">
+
+
+				<button id="save" class="clkbtn">Save</button>
+			</div>
+
+			
+			<div class="search-box">
+				<input id="search" type="email" class="search ele" placeholder="search">
+				<button id="search-details" class="clkbtn">Search</button>
+				<button id="reset" class="clkbtn">Reset</button>
+			</div>
+		</div>
+	</div>
+	<div class="table-container" id="table-container">
+		<div id="table"></div>
+
+	</div>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>
